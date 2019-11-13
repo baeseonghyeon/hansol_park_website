@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>처음부터5</title>
+
+	<style type="text/css">
+		@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+		
+		html, body {margin: 0; height: 100%; overflow: hidden;}
+
+		h1{font-size: 30px; padding: 1% 0% 0% 0%; color: white;}
+		h2{font-size: 30px;}
+		p{font-size: 24px; line-height: 1.7; word-break: keep-all;}
+
+		.mainindex{text-align: center; margin: 0; padding: 2% 0% 1% 0%;}
+	  .detailindex{text-align: center; margin: 0; padding: 3% 0% 0% 0%;
+	  			   font-size: 29px;}
+	  	
+	  	.guidetext{transform: rotate(90deg);
+	  			   height:20%; width: 20%; position: absolute;}
+	  	
+
+
+		#textmov1{width: 100%; position: absolute; height: 7%;
+					  background-color: #1f1f1f;} 
+
+			#guidebox1-1{top: 7%; left: 53%; 
+						width:4%; background-color: #787878; z-index: 1;
+						height: 41%; position: absolute;}
+			
+			#guidebox1-2{ top: 48%; left: 53%; 
+						width:4%; background-color: #adaaaa; z-index: 1;
+						height: 46%; position: absolute;}
+
+			#guidebox1-3{ top: 7%; left: 96%; 
+						width:4%; background-color: #8a8a8a; z-index: 1;
+						height: 93%; position: absolute;}
+
+			#footbox{top: 94%; background-color: #1f1f1f;
+						width: 57%; z-index: 1;
+						height: 6%; position: absolute;}
+			.foottext{left: 11%; top: -10%;
+					  color: white; position: absolute;}
+
+/* 메인 이미지들------------- */
+
+		#main1-1{top: 7%; 
+					 width: 53%; height: 41%; overflow: auto; z-index: 2;
+					 background-color: #b5b5b5; position: absolute;}
+			#contents1-1{top: 4%; left: 2%;
+		width: 95%; height: 90%; overflow: auto; z-index: 2;
+		background-color: #b5b5b5; position: absolute;}
+
+
+		#main1-2{top: 48%;
+					 width: 53%; height: 46%; z-index: 2;
+					 overflow: auto; background-color: #d4d2d2; 
+					 position: absolute;}
+			#contents1-2{top: 4%; left: 2%;
+		width: 95%; height: 90%; overflow: auto; z-index: 2;
+		background-color: #d4d2d2; position: absolute;}
+
+
+		#main1-3{top: 7%; left: 57%; 
+					 width: 39%; height: 93%; overflow: auto;z-index: 2;
+					 background-color: #e3e3e3; position: absolute;}
+			#contents1-3{top: 2%; padding-right: 2%;
+		width: 95%; height: 93%; overflow: auto; z-index: 2;
+		background-color: #e3e3e3; position: absolute;}
+
+/* ---------------------------------------- */
+
+
+		#maingraphic{width: 50%; height: 100%; float: left;
+			background-color: #dbdbdb; overflow: scroll;}
+		#mainlettering{width: 40%; height: 100%; float: left;
+			background-color: #cccccc; overflow: scroll;}
+
+		#mainindex{text-align: center; padding: 10px; margin:0;}
+
+		.artworkframe{width:15%; height: auto; float: left;
+				 overflow: hidden; padding:0.7%;}
+		.detailframe{width:90%; height: auto; float: top;
+				 overflow: hidden; padding: 0% 5% 0% 5%;}
+		.pic{width: 100%; height: auto; overflow: hidden;}
+
+
+/* 스크롤 바 세팅 ------------------------- */
+		::-webkit-scrollbar{width: 3px;}
+
+	::-webkit-scrollbar-thumb { background-color:#525252;}
+	::-webkit-scrollbar-thumb:hover {background: #555; height: 1px;}
+	::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {width:16px; height:16px;background:#f1ef79;} 
+	-ms-overflow-style: none; overflow: auto;
+			
+
+/* ----------마키태그 css로------------- */
+
+.marquee {
+  width: 100%; 
+  position: absolute;
+  height: 7%;
+  overflow:hidden;
+  margin-bottom:10px;
+ }
+.marqueebg{
+  width: 100%; 
+  position: absolute;
+  height: 7%;
+  background-color: #1f1f1f;
+}
+
+.marquee h1:after {
+  content:"";
+  white-space:nowrap;
+  
+}
+
+.marquee h1 {
+  margin:0;
+  padding-left:100%;
+  display:inline-block;
+  white-space:nowrap;
+    -webkit-animation-name:marquee;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-duration:30s;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:marquee;
+    -moz-animation-timing-function:linear;
+    -moz-animation-duration:30s;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation-name:marquee;
+    -ms-animation-timing-function:linear;
+    -ms-animation-duration:30s;
+    -ms-animation-iteration-count:infinite;
+    -o-animation-name:marquee;
+    -o-animation-timing-function:linear;
+    -o-animation-duration:30s;
+    -o-animation-iteration-count:infinite;
+    animation-name:marquee;
+    animation-timing-function:linear;
+    animation-duration:30s;
+    animation-iteration-count:infinite;
+}
+@-webkit-keyframes marquee {
+  from   { -webkit-transform: translate(0%);}
+  99%,to { -webkit-transform: translate(-100%);}
+}
+@-moz-keyframes marquee {
+  from   { -moz-transform: translate(0%);}
+  99%,to { -moz-transform: translate(-100%);}
+}
+@-ms-keyframes marquee {
+  from   { -ms-transform: translate(0%);}
+  99%,to { -ms-transform: translate(-100%);}
+}
+@-o-keyframes marquee {
+  from   { -o-transform: translate(0%);}
+  99%,to { -o-transform: translate(-100%);}
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
+}
+    
+/* ----------마키태그 css로------------- */
+
+		
+	</style>
+</head>
+<body>
+	<header>
+	<div class="marqueebg">
+		<div class="marquee">
+		 	<h1>
+		  	박한솔 hansol_park 폰트, 레터링, 그래픽 디자인. [insta] 
+		  	<a href="https://www.instagram.com/hansol_park.otf/" target="_blank">@hansol_park.otf </a>
+		  	 [contact me] incolore9@gmail.com 
+ 			</h1>
+		</div>
+	</div>
+	</header>
+	
+	<div id="guidebox1-1">
+		<h2 class="guidetext">
+			graphic
+		</h2>
+	</div>
+	
+	<div id="main1-1">
+		<div id="contents1-1">
+			<div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div><div class="artworkframe">
+					<img src="3.jpg" class="pic">
+				</div>
+		</div>
+		
+	</div>
+
+
+
+
+	<div id="guidebox1-2">
+		<h2 class="guidetext">
+			lettering_and_font
+		</h2>
+	</div>
+
+	<div id="main1-2">
+		<div id="contents1-2">
+			<div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div><div class="artworkframe">
+				<img src="3.jpg" class="pic">
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="guidebox1-3">
+		<h2 class="guidetext">
+			untitled_
+		</h2>
+	</div>
+
+	<div id="main1-3">
+		<h2 class="detailindex">
+		</h2>
+			<div id="contents1-3">
+				<div class="detailframe">
+				
+				<img src="display_none.png" class="pic">
+				</div>
+					<div class="detailframe">
+					<p>
+					역사적으로 확인할 수 있는 최초의 플랜테이션은 포도주와 올리브유의 거대한 수요를 공급하던 고대 로마의 라티푼디움이라 할 수 있다. 하지만 현재의 플랜테이션은 대부분 제국주의시대에 기원을 두고 있다. 즉 16~17세기부터 식민지의 토지와 기후, 노동력을 이용하여 유럽권에서 고부가가치를 지닌 작물들을 경작해 왔다. 2차 세계대전 이후 식민지가 독립하면서 농장의 경영권이 국유화되어 현지인이 경영하게 되었다. 재배작물 중 대체소재가 개발되어 수요가 줄어든 마, 목화 등의 섬유, 염료 및 고무같은 작물들은 상당수 줄어들었다. 하지만 아직도 세계적으로 경제성이 있는 상품작물들은 이런 농업방식이 유지되고 있다. 덕분에 과거 값비싼 작물들이 세계 시장에서 저렴한 시장가격을 유지한다. 그러나 경영주체가 달라졌을 뿐 경영방식이 여전히 과거와 같은 불공정한 저임금, 착취노동에 의존하는 문제가 남아있고, 이를 해소하기 위해 공정무역과 같은 사회운동이 일어나고 있다. 경영방식상 불법적이고 폐쇄적이기 때문에 마약과 불법작물 역시도 이런 방식으로 경작되어 범죄조직과 엮여 경영된다. 
+						
+					</p>
+				
+			</div>
+		</div>
+	</div>
+
+
+<footer>
+	<div id="footbox">
+		<h2 class="foottext">
+			Copyrightⓒ 2019 by hansol park. All rights reserved  
+		</h2>
+	</div>
+
+</footer>
+
+
+</body>
+</html>
