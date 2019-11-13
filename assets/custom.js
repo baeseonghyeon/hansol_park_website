@@ -1,27 +1,27 @@
 $(document).ready(()=>{
     let list = [
 		{ 	
-			img_title : "침착맨",
-			img_url : "https://i.ytimg.com/vi/Fx_w9jTxkBQ/maxresdefault.jpg" ,
-			img_desc : "트위치 일류 스트리머 침착맨" 
+			img_title : "title1",
+			img_url : "3.jpg" ,
+			img_desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione ipsum ipsa mollitia vel deserunt nulla dolores. Consequuntur, eum pariatur vitae laboriosam earum iure amet minus nisi dolorum in suscipit?"
 		},
 		{ 	
-			img_title : "주펄",
-			img_url : "http://img.etnews.com/news/article/2018/08/22/article_22184131884300.jpg" ,
-			img_desc : "쌍천만 작가 주펄" 
+			img_title : "title2",
+			img_url : "3.jpg" ,
+			img_desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae enim voluptatum quasi blanditiis cum dolore numquam eaque praesentium reprehenderit itaque veniam ipsam possimus qui, ab quo quas, at similique inventore."
 		},
 	];
 
 	let list2 = [
 		{ 	
-			img_title : "침착맨",
-			img_url : "https://i.ytimg.com/vi/wD9kz57Amrw/maxresdefault.jpg" ,
-			img_desc : "트위치 일류 스트리머 침착맨" 
+			img_title : "title3",
+			img_url : "3.jpg" ,
+			img_desc : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam unde temporibus est veritatis dicta iure repellat aliquam velit quae earum hic fugit totam, optio corporis illum ratione? Placeat, et perspiciatis."
 		},
 		{ 	
-			img_title : "침착맨 주호민",
-			img_url : "http://file3.instiz.net/data/file3/2018/03/17/2/c/4/2c4f2ae41e728e97d9dafad91bae472c.jpg" ,
-			img_desc : "프로페시아x침버린" 
+			img_title : "title4",
+			img_url : "3.jpg" ,
+			img_desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptas quis quaerat natus commodi tempora ad illo minus amet sit nemo eligendi quibusdam illum maxime, unde officiis dignissimos! Voluptatem, maxime!"
 		},
 	];
 	
