@@ -1,0 +1,168 @@
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+		
+html, body {margin: 0; height: 100%; overflow: hidden;}
+
+h1{font-size: 30px; padding: 1% 0% 0% 0%; color: white;}
+h2{font-size: 30px;}
+p{font-size: 24px; line-height: 1.7; word-break: keep-all;}
+
+.mainindex{text-align: center; margin: 0; padding: 2% 0% 1% 0%;}
+.detailindex{text-align: center; margin: 0; padding: 3% 0% 0% 0%;
+			 font-size: 29px;}
+  
+.guidetext{transform: rotate(90deg);position: absolute;width: 1000%;	text-align: center;}
+  
+
+#textmov1{width: 100%; position: absolute; height: 7%;
+			  background-color: #1f1f1f;}
+
+	.align-center{display: flex;justify-content: center;align-items: center;}
+	#guidebox1-1{top: 7%; left: 53%; 
+				width:4%; background-color: #787878; z-index: 1;
+				height: 41%; position: absolute;}
+	
+	#guidebox1-2{ top: 48%; left: 53%; 
+				width:4%; background-color: #adaaaa; z-index: 1;
+				height: 46%; position: absolute;}
+
+	#guidebox1-3{ top: 7%; left: 96%; 
+				width:4%; background-color: #8a8a8a; z-index: 1;
+				height: 93%; position: absolute;}
+
+	#footbox{top: 94%; background-color: #1f1f1f;
+				width: 57%; z-index: 1;
+				height: 6%; position: absolute;}
+	.foottext{left: 11%; top: -10%;
+			  color: white; position: absolute;}
+
+/* 메인 이미지들------------- */
+
+#main1-1{top: 7%; 
+			 width: 53%; height: 41%; overflow: auto; z-index: 2;
+			 background-color: #b5b5b5; position: absolute;}
+	#contents1-1{top: 4%; left: 2%;
+width: 95%; height: 90%; overflow: auto; z-index: 2;
+background-color: #b5b5b5; position: absolute;}
+
+
+#main1-2{top: 48%;
+			 width: 53%; height: 46%; z-index: 2;
+			 overflow: auto; background-color: #d4d2d2; 
+			 position: absolute;}
+	#contents1-2{top: 4%; left: 2%;
+width: 95%; height: 90%; overflow: auto; z-index: 2;
+background-color: #d4d2d2; position: absolute;}
+
+
+#main1-3{top: 7%; left: 57%; 
+			 width: 39%; height: 93%; overflow: auto;z-index: 2;
+			 background-color: #e3e3e3; position: absolute;}
+	#contents1-3{top: 2%; padding-right: 2%;
+width: 95%; height: 93%; overflow: auto; z-index: 2;
+background-color: #e3e3e3; position: absolute;}
+
+/* ---------------------------------------- */
+
+
+#maingraphic{width: 50%; height: 100%; float: left;
+	background-color: #dbdbdb; overflow: scroll;}
+#mainlettering{width: 40%; height: 100%; float: left;
+	background-color: #cccccc; overflow: scroll;}
+
+#mainindex{text-align: center; padding: 10px; margin:0;}
+
+.artworkframe{width:15%; height: auto; float: left;
+		 overflow: hidden; padding:0.7%;}
+.detailframe{width:90%; height: auto; float: top;
+		 overflow: hidden; padding: 0% 5% 0% 5%;}
+.pic{width: 100%; height: auto; overflow: hidden;}
+
+
+/* 스크롤 바 세팅 ------------------------- */
+::-webkit-scrollbar{width: 3px;}
+
+::-webkit-scrollbar-thumb { background-color:#525252;}
+::-webkit-scrollbar-thumb:hover {background: #555; height: 1px;}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {width:16px; height:16px;background:#f1ef79;} 
+-ms-overflow-style: none; overflow: auto;
+	
+
+/* ----------마키태그 css로------------- */
+
+.marquee {
+width: 100%; 
+position: absolute;
+height: 7%;
+overflow:hidden;
+margin-bottom:10px;
+}
+.marqueebg{
+width: 100%; 
+position: absolute;
+height: 7%;
+background-color: #1f1f1f;
+}
+
+.marquee h1:after {
+content:"";
+white-space:nowrap;
+
+}
+
+.marquee h1 {
+margin:0;
+padding-left:100%;
+display:inline-block;
+white-space:nowrap;
+-webkit-animation-name:marquee;
+-webkit-animation-timing-function:linear;
+-webkit-animation-duration:30s;
+-webkit-animation-iteration-count:infinite;
+-moz-animation-name:marquee;
+-moz-animation-timing-function:linear;
+-moz-animation-duration:30s;
+-moz-animation-iteration-count:infinite;
+-ms-animation-name:marquee;
+-ms-animation-timing-function:linear;
+-ms-animation-duration:30s;
+-ms-animation-iteration-count:infinite;
+-o-animation-name:marquee;
+-o-animation-timing-function:linear;
+-o-animation-duration:30s;
+-o-animation-iteration-count:infinite;
+animation-name:marquee;
+animation-timing-function:linear;
+animation-duration:30s;
+animation-iteration-count:infinite;
+}
+@-webkit-keyframes marquee {
+from   { -webkit-transform: translate(0%);}
+99%,to { -webkit-transform: translate(-100%);}
+}
+@-moz-keyframes marquee {
+from   { -moz-transform: translate(0%);}
+99%,to { -moz-transform: translate(-100%);}
+}
+@-ms-keyframes marquee {
+from   { -ms-transform: translate(0%);}
+99%,to { -ms-transform: translate(-100%);}
+}
+@-o-keyframes marquee {
+from   { -o-transform: translate(0%);}
+99%,to { -o-transform: translate(-100%);}
+}
+@keyframes marquee {
+from   { transform: translate(0%);}
+99%,to { transform: translate(-100%);}
+}
+
+/* ----------마키태그 css로------------- */
+
+
+/* thumbnail mockup */
+.mockup {
+	display: none;
+}
+#contents1-1  .artworkframe img, #contents1-2 .artworkframe img {
+	width: 100%;
+}
